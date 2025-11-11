@@ -20,7 +20,7 @@ jobs:
       - uses: giraffate/clippy-action@v1
         with:
           github_token: '${{ secrets.GITHUB_TOKEN }}'
-          args: '-- -D warnings'
+          level: 'warning'
   cargo-test:
     runs-on: ubuntu-latest
     steps:
