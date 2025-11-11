@@ -11,7 +11,7 @@ jobs:
       - run: |
           sudo apt-get update &&\
           sudo apt-get install libusb-1.0-0-dev -y
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: rustup component add clippy
       - uses: actions-rs/clippy-check@v1
         with:
@@ -20,7 +20,7 @@ jobs:
   cargo-test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
@@ -32,7 +32,7 @@ jobs:
   cargo-deny:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - uses: EmbarkStudios/cargo-deny-action@v1
       with:
         command: check bans licenses sources
