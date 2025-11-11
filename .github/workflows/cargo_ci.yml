@@ -1,5 +1,8 @@
 name: 'Cargo CI'
-on: push
+on: 
+  push:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   cargo-clippy:
