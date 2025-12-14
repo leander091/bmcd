@@ -35,7 +35,7 @@ humantime = "2.1.0"
 if-addrs = "0.13.3"
 inotify = "0.11.0"
 nix = { version = "0.29.0", features = ["fs", "feature"] }
-openssl = "0.10.70"
+openssl = "0.10.72"
 pin-project = "1.1.9"
 pwhash = "1.0.0"
 rand = "0.9.0"
