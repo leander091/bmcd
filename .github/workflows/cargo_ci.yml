@@ -24,6 +24,7 @@ jobs:
       - uses: dtolnay/rust-toolchain@stable
         with:
           toolchain: stable
+      - run: cargo test
   cargo-deny:
     runs-on: ubuntu-latest
     steps:
