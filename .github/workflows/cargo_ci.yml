@@ -18,14 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions-rs/toolchain@v1
+      - uses: dtolnay/rust-toolchain@stable
         with:
           toolchain: stable
-          default: true
-          profile: minimal
-      - uses: actions-rs/cargo@v1
-        with:
-          command: test
   cargo-deny:
     runs-on: ubuntu-latest
     steps:
