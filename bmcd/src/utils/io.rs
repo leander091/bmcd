@@ -127,7 +127,7 @@ where
     }
 }
 
-impl<'_, W> AsyncWrite for WriteMonitor<'_, W>
+impl<'a, W> AsyncWrite for WriteMonitor<'_, W>
 where
     W: AsyncWrite + Unpin,
 {
